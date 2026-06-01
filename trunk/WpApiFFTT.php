@@ -73,7 +73,7 @@ class WpApiFFTT {
      * @param string $motdePasse
      */
     private function initializeApi($idApplication, $motdePasse) {
-        if (!is_null($idApplication) && !is_null($motdePasse)) {
+        if (!empty($idApplication) && !empty($motdePasse)) {
             $api = new AccesApi($idApplication, $motdePasse);
             $serial = get_transient('wp_api_fftt_serial');
             if (empty($serial)) {

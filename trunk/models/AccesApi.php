@@ -253,6 +253,10 @@ if (!class_exists('AccesApi')) {
             $data = curl_exec($curl);
             curl_close($curl);
 
+            if (empty($data)) {
+                return false;
+            }
+
             $xml = simplexml_load_string($data);
 
             if (!$xml) {
