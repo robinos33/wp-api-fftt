@@ -35,17 +35,34 @@ class WpApiFFTT {
 
     public function deprecation_notice() {
         ?>
-        <div class="notice notice-error" style="border-left-color:#d63638;padding:12px 16px;">
-            <h3 style="margin:0 0 8px;font-size:1.1em;">⚠️ wp-Api-FFTT est déprécié — migrez vers <strong>Dataping</strong></h3>
-            <p style="margin:0 0 8px;">
-                Ce plugin n'est plus maintenu. Le plugin <strong><a href="https://wordpress.org/plugins/dataping/" target="_blank">Dataping</a></strong>
-                est son successeur officiel : il est plus performant, plus sécurisé et activement maintenu.
+        <div style="
+            background:#fef2f2;
+            border:2px solid #d63638;
+            border-radius:6px;
+            padding:16px 20px;
+            margin:20px 20px 0 2px;
+        ">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                <span style="font-size:1.5em;line-height:1;">🚨</span>
+                <h3 style="margin:0;color:#7f1d1d;font-size:1.1em;">
+                    wp-Api-FFTT est déprécié — ce plugin n'est plus maintenu
+                </h3>
+            </div>
+            <p style="margin:0 0 12px;color:#7f1d1d;">
+                Veuillez migrer vers <strong><a href="https://wordpress.org/plugins/dataping/" target="_blank" style="color:#b91c1c;">Dataping</a></strong>,
+                son successeur officiel : plus performant, plus sécurisé et activement maintenu.
             </p>
-            <p style="margin:0;">
-                <a class="button button-primary" href="https://wordpress.org/plugins/dataping/" target="_blank">Installer Dataping sur WordPress.org</a>
-                &nbsp;
-                <a class="button" href="https://wordpress.org/plugins/wp-api-fftt/" target="_blank">En savoir plus</a>
-            </p>
+            <a href="https://wordpress.org/plugins/dataping/" target="_blank"
+               style="
+                   display:inline-block;
+                   background:#d63638;
+                   color:#fff;
+                   padding:8px 16px;
+                   border-radius:4px;
+                   text-decoration:none;
+                   font-weight:600;
+                   font-size:.9em;
+               ">→ Installer Dataping sur WordPress.org</a>
         </div>
         <?php
     }
