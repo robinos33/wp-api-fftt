@@ -1,11 +1,24 @@
 === wp-Api-FFTT ===
-Tags: ping, tennis de table, ping pong, resultats championnat, api fftt 
+Tags: ping, tennis de table, ping pong, resultats championnat, api fftt
 Requires at least: 3.2
 Tested up to: 3.4
-Stable tag: 0.2.3
+Stable tag: 0.3.0
 License: GPLv2
 
 == Description ==
+
+**⚠️ Ce plugin est déprécié. Veuillez utiliser [Dataping](https://wordpress.org/plugins/dataping/) à la place.**
+
+Le plugin **Dataping** est le successeur officiel de wp-Api-FFTT. Il offre :
+
+* Des performances améliorées
+* Une meilleure sécurité
+* Une maintenance active et des mises à jour régulières
+
+**[→ Installer Dataping](https://wordpress.org/plugins/dataping/)**
+
+---
+
 Plugin Wordpress non-officiel d'affichage des données issues de l'API de Fédération Française de Tennis de Table.
 
 Version actuelle - v0.2.3 :
@@ -14,11 +27,12 @@ Version passée - v0.2.1 :
 - Correction de divers bugs
 - Gestion simple de l'affichage des joueurs
 
-----------------------------------------------------------------------------------
-Le plugin se verra évoluer au fur et à mesure des semaines pour implémenter l'ensemble des fonctionnalités de l'API.
-Merci à Vincent Bab (vincentbab@gmail.com), auteur de la classe de récupération des données (que j'ai adapté pour les besoin de la création de ce plugin).
+Le plugin ne sera plus mis à jour. Merci à Vincent Bab (vincentbab@gmail.com), auteur de la classe de récupération des données.
 
 == Changelog ==
+= 0.3.0 =
+* Plugin déprécié – redirection vers Dataping (https://wordpress.org/plugins/dataping/)
+* Ajout d'une bannière d'avertissement dans l'administration WordPress
 = 0.2.3 =
 * Correction de bugs
 = 0.2.1 =

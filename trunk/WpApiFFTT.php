@@ -2,8 +2,8 @@
 /*
   Plugin Name: wp-Api-FFTT
   Plugin URI: http://robin-aldasoro.com/docs/wordpress-plugins/wp-Api-FFTT.zip
-  Description: Ce plugin affiche les données accessibles via l'API de la FFTT
-  Version: 0.2.3
+  Description: ⚠️ Plugin déprécié – Utilisez Dataping (https://wordpress.org/plugins/dataping/) à la place.
+  Version: 0.3.0
   Author: Robin Aldasoro
   Author URI: robin-aldasoro.com
   License: GPLv2
@@ -28,8 +28,26 @@ class WpApiFFTT {
         add_action('admin_menu', array($this, 'add_admin_menu'));
         add_action('admin_init', array($this, 'register_settings'));
         add_action('init', array($this, 'api_fftt_style_scripts'));
+        add_action('admin_notices', array($this, 'deprecation_notice'));
         add_shortcode('equipe', array($this, 'equipes_front'));
         add_shortcode('joueurs', array($this, 'joueurs_front'));
+    }
+
+    public function deprecation_notice() {
+        ?>
+        <div class="notice notice-error" style="border-left-color:#d63638;padding:12px 16px;">
+            <h3 style="margin:0 0 8px;font-size:1.1em;">⚠️ wp-Api-FFTT est déprécié — migrez vers <strong>Dataping</strong></h3>
+            <p style="margin:0 0 8px;">
+                Ce plugin n'est plus maintenu. Le plugin <strong><a href="https://wordpress.org/plugins/dataping/" target="_blank">Dataping</a></strong>
+                est son successeur officiel : il est plus performant, plus sécurisé et activement maintenu.
+            </p>
+            <p style="margin:0;">
+                <a class="button button-primary" href="https://wordpress.org/plugins/dataping/" target="_blank">Installer Dataping sur WordPress.org</a>
+                &nbsp;
+                <a class="button" href="https://wordpress.org/plugins/wp-api-fftt/" target="_blank">En savoir plus</a>
+            </p>
+        </div>
+        <?php
     }
 
     /**
