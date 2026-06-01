@@ -20,9 +20,9 @@ function autoload_fft_models() {
 }
 
 function getSessionApi() {
-    return $_SESSION['api'];
+    return get_transient('wp_api_fftt_api');
 }
 
 function setSessionApi($api) {
-    $_SESSION['api'] = $api;
+    set_transient('wp_api_fftt_api', $api, HOUR_IN_SECONDS);
 }

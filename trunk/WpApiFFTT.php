@@ -75,11 +75,13 @@ class WpApiFFTT {
     private function initializeApi($idApplication, $motdePasse) {
         if (!is_null($idApplication) && !is_null($motdePasse)) {
             $api = new AccesApi($idApplication, $motdePasse);
-            if (empty($_SESSION['serial'])) {
-                $_SESSION['serial'] = AccesApi::generateSerial();
+            $serial = get_transient('wp_api_fftt_serial');
+            if (empty($serial)) {
+                $serial = AccesApi::generateSerial();
+                set_transient('wp_api_fftt_serial', $serial, HOUR_IN_SECONDS);
             }
 
-            $api->setSerial($_SESSION['serial']);
+            $api->setSerial($serial);
             $init = $api->initialization();
 
             if ($init['initialisation']['appli'] === '1') {
