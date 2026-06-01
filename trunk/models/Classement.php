@@ -5,6 +5,7 @@
  *
  * @author robin
  */
+if (!class_exists('Classement')) {
 class Classement {
 
     private $rangNational;
@@ -121,4 +122,5 @@ class Classement {
         $this->progressionAnnuelle = $progressionAnnuelle;
     }
 
+}
 }

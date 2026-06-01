@@ -11,6 +11,7 @@
  *
  * @author robin
  */
+if (!class_exists('Club')) {
 class Club {
 
     private $joueurs;
@@ -80,4 +81,5 @@ class Club {
         $this->site = $site;
     }
 
+}
 }

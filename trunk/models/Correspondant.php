@@ -11,6 +11,7 @@
  *
  * @author robin
  */
+if (!class_exists('Correspondant')) {
 class Correspondant {
 
     private $nom;
@@ -18,4 +19,5 @@ class Correspondant {
     private $telephone;
     private $mail;
 
+}
 }

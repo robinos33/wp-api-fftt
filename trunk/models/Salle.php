@@ -1,5 +1,6 @@
 <?php
 
+if (!class_exists('Salle')) {
 class Salle {
 
     private $nom;
@@ -86,4 +87,5 @@ class Salle {
         $this->lat = $lat;
     }
 
+}
 }
