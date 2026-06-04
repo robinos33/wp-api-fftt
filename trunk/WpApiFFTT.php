@@ -2,7 +2,7 @@
 /*
   Plugin Name: wp-Api-FFTT
   Plugin URI: http://robin-aldasoro.com/docs/wordpress-plugins/wp-Api-FFTT.zip
-  Description: ⚠️ Plugin déprécié – Utilisez Dataping (https://wordpress.org/plugins/dataping/) à la place.
+  Description: ⚠️ Plugin déprécié – Utilisez Mon Club TT (https://wordpress.org/plugins/mon-club-tt/) à la place.
   Version: 0.3.0
   Author: Robin Aldasoro
   Author URI: robin-aldasoro.com
@@ -49,10 +49,10 @@ class WpApiFFTT {
                 </h3>
             </div>
             <p style="margin:0 0 12px;color:#7f1d1d;">
-                Veuillez migrer vers <strong><a href="https://wordpress.org/plugins/dataping/" target="_blank" style="color:#b91c1c;">Dataping</a></strong>,
+                Veuillez migrer vers <strong><a href="https://wordpress.org/plugins/mon-club-tt/" target="_blank" style="color:#b91c1c;">Mon Club TT</a></strong>,
                 son successeur officiel : plus performant, plus sécurisé et activement maintenu.
             </p>
-            <a href="https://wordpress.org/plugins/dataping/" target="_blank"
+            <a href="https://wordpress.org/plugins/mon-club-tt/" target="_blank"
                style="
                    display:inline-block;
                    background:#d63638;
@@ -62,7 +62,7 @@ class WpApiFFTT {
                    text-decoration:none;
                    font-weight:600;
                    font-size:.9em;
-               ">→ Installer Dataping sur WordPress.org</a>
+               ">→ Installer Mon Club TT sur WordPress.org</a>
         </div>
         <?php
     }

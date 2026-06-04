@@ -7,15 +7,15 @@ License: GPLv2
 
 == Description ==
 
-**⚠️ Ce plugin est déprécié. Veuillez utiliser [Dataping](https://wordpress.org/plugins/dataping/) à la place.**
+**⚠️ Ce plugin est déprécié. Veuillez utiliser [Mon Club TT](https://wordpress.org/plugins/mon-club-tt/) à la place.**
 
-Le plugin **Dataping** est le successeur officiel de wp-Api-FFTT. Il offre :
+Le plugin **Mon Club TT** est le successeur officiel de wp-Api-FFTT. Il offre :
 
 * Des performances améliorées
 * Une meilleure sécurité
 * Une maintenance active et des mises à jour régulières
 
-**[→ Installer Dataping](https://wordpress.org/plugins/dataping/)**
+**[→ Installer Mon Club TT](https://wordpress.org/plugins/mon-club-tt/)**
 
 ---
 
@@ -31,7 +31,7 @@ Le plugin ne sera plus mis à jour. Merci à Vincent Bab (vincentbab@gmail.com),
 
 == Changelog ==
 = 0.3.0 =
-* Plugin déprécié – redirection vers Dataping (https://wordpress.org/plugins/dataping/)
+* Plugin déprécié – redirection vers Mon Club TT (https://wordpress.org/plugins/mon-club-tt/)
 * Ajout d'une bannière d'avertissement dans l'administration WordPress
 = 0.2.3 =
 * Correction de bugs
